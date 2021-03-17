@@ -16,14 +16,17 @@
 //SEMPRE QUE CRIAR UM COMPONENTE, a primeira letra DEVE ser maiúscula
 //Regra: um componente por arquivo
 
-import Header from  "./Header"
-import React, {useState} from 'react' // é praciso importar o useState para mante as informações
+//import Header from  "./Header";
+import React from 'react'; // é praciso importar o useState para mante as informações
+import './Global.css'; //importando o css
+import './App.css';
+import './Sidebar.css'
 
 function App() {
 
   //toda função que é própria de um componente, cria-se dentro dele 
   //mesmo
-  
+
 
   /**
    * Devolve um vertor
@@ -31,31 +34,61 @@ function App() {
    * const [counter, setCounter] = useState(0)
    */
 
-  const [counter, setCounter] = useState(0)
 
-  function incrementeCounter(){
-    //essa função ta disponível para todo componente App
-     setCounter( counter + 1);
-
-  }
 
   return (
+
     //não pode colocar mais de um componente da função.
     //para escrever certo, utiliza-se <div> entorno dos componentes
     /**
      * porém quando usa-se div é possível dificultar a estilização da página
      * então usa-se um fragment <></>
      */
-   
+
     //aprendendo stado
 
-   <>
-   <Header title='Dashboard'/>
+    <div id="App">
+      <aside>
+        <strong>Cadastrar</strong>
+        <form>
+          <div class="input-block">
+            <label htmlFor="github_username">Usuário do Git Hub</label>
+            <input name="github_username" id="github_username" required></input>
+          </div>
 
-   
-   <h1>Contador : {counter}</h1>
-   <button onClick={incrementeCounter}>Incrementar</button>
-   </>
+          <div class="input-block">
+            <label htmlFor="techs">Tecnologias</label>
+            <input name="techs" id="techs" required></input>
+          </div>
+
+          <div className="input-group">
+
+            <div class="input-block">
+
+              <label htmlFor="latitude">Latitude</label>
+              <input name="latitude" id="latitude" required></input>
+
+            </div>
+
+            <div class="input-block">
+
+              <label htmlFor="longitude">Longitude</label>
+              <input name="longitude" id="longitude" required></input>
+
+            </div>
+
+          </div>
+
+          <button type="submit">Salvar</button>
+
+        </form>
+      </aside>
+      <main>
+
+      </main>
+
+    </div>
+
   );
 }
 
