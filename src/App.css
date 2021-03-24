@@ -8,3 +8,14 @@
     align-items: flex-start;
 }
 
+#App main{
+    margin-left: 30px;
+}
+
+/*Como deixar a página resposiva*/
+
+@media (max-width: 1000px){
+    #App{
+        flex-direction: column;
+    }
+}

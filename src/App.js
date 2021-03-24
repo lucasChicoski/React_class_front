@@ -20,7 +20,8 @@
 import React from 'react'; // é praciso importar o useState para mante as informações
 import './Global.css'; //importando o css
 import './App.css';
-import './Sidebar.css'
+import './Sidebar.css';
+import './Main.css';
 
 function App() {
 
@@ -83,7 +84,57 @@ function App() {
 
         </form>
       </aside>
+
       <main>
+          <ul>
+            <li className="dev-item">
+                <header>
+                  <img src="https://avatars.githubusercontent.com/u/57196411?s=460&u=6cbc69196433da1011572ec03347fc74def1604b&v=4" alt=""/>
+                  <div className="user-info">
+                    <strong>Lucas Chicoski</strong>
+                    <span>Java, JavaScript, C, Matlab</span>
+                  </div>
+                </header>
+                <p>tecotecotecotecotecotecotecotecotecoteco</p>
+                <a target="_blank" href="https://github.com/lucasChicoski">Acessar perfil no Github</a>
+            </li>
+
+            <li className="dev-item">
+                <header>
+                  <img src="https://avatars.githubusercontent.com/u/57196411?s=460&u=6cbc69196433da1011572ec03347fc74def1604b&v=4" alt=""/>
+                  <div className="user-info">
+                    <strong>Lucas Chicoski</strong>
+                    <span>Java, JavaScript, C, Matlab</span>
+                  </div>
+                </header>
+                <p>tecotecotecotecotecotecotecotecotecoteco</p>
+                <a target="_blank" href="https://github.com/lucasChicoski">Acessar perfil no Github</a>
+            </li>
+
+            <li className="dev-item">
+                <header>
+                  <img src="https://avatars.githubusercontent.com/u/57196411?s=460&u=6cbc69196433da1011572ec03347fc74def1604b&v=4" alt=""/>
+                  <div className="user-info">
+                    <strong>Lucas Chicoski</strong>
+                    <span>Java, JavaScript, C, Matlab</span>
+                  </div>
+                </header>
+                <p>tecotecotecotecotecotecotecotecotecoteco</p>
+                <a target="_blank" href="https://github.com/lucasChicoski">Acessar perfil no Github</a>
+            </li>
+
+            <li className="dev-item">
+                <header>
+                  <img src="https://avatars.githubusercontent.com/u/57196411?s=460&u=6cbc69196433da1011572ec03347fc74def1604b&v=4" alt=""/>
+                  <div className="user-info">
+                    <strong>Lucas Chicoski</strong>
+                    <span>Java, JavaScript, C, Matlab</span>
+                  </div>
+                </header>
+                <p>tecotecotecotecotecotecotecotecotecoteco</p>
+                <a target="_blank" href="https://github.com/lucasChicoski">Acessar perfil no Github</a>
+            </li>
+          </ul>
 
       </main>
 
